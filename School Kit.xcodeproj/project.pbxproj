@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		211AF2161B5047BA00AE884A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211AF2151B5047BA00AE884A /* AppDelegate.swift */; };
+		211AF2181B5047BA00AE884A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211AF2171B5047BA00AE884A /* ViewController.swift */; };
+		211AF21B1B5047BA00AE884A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 211AF2191B5047BA00AE884A /* Main.storyboard */; };
+		211AF21D1B5047BA00AE884A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 211AF21C1B5047BA00AE884A /* Assets.xcassets */; };
+		211AF2201B5047BA00AE884A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 211AF21E1B5047BA00AE884A /* LaunchScreen.storyboard */; };
+		211AF22B1B5047BA00AE884A /* School_KitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211AF22A1B5047BA00AE884A /* School_KitTests.swift */; };
+		211AF2361B5047BA00AE884A /* School_KitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211AF2351B5047BA00AE884A /* School_KitUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		211AF2271B5047BA00AE884A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 211AF20A1B5047BA00AE884A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 211AF2111B5047BA00AE884A;
+			remoteInfo = "School Kit";
+		};
+		211AF2321B5047BA00AE884A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 211AF20A1B5047BA00AE884A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 211AF2111B5047BA00AE884A;
+			remoteInfo = "School Kit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		211AF2121B5047BA00AE884A /* School Kit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "School Kit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		211AF2151B5047BA00AE884A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		211AF2171B5047BA00AE884A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		211AF21A1B5047BA00AE884A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		211AF21C1B5047BA00AE884A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		211AF21F1B5047BA00AE884A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		211AF2211B5047BA00AE884A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		211AF2261B5047BA00AE884A /* School KitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "School KitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		211AF22A1B5047BA00AE884A /* School_KitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School_KitTests.swift; sourceTree = "<group>"; };
+		211AF22C1B5047BA00AE884A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		211AF2311B5047BA00AE884A /* School KitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "School KitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		211AF2351B5047BA00AE884A /* School_KitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School_KitUITests.swift; sourceTree = "<group>"; };
+		211AF2371B5047BA00AE884A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		211AF20F1B5047BA00AE884A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		211AF2231B5047BA00AE884A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		211AF22E1B5047BA00AE884A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		211AF2091B5047BA00AE884A = {
+			isa = PBXGroup;
+			children = (
+				211AF2141B5047BA00AE884A /* School Kit */,
+				211AF2291B5047BA00AE884A /* School KitTests */,
+				211AF2341B5047BA00AE884A /* School KitUITests */,
+				211AF2131B5047BA00AE884A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		211AF2131B5047BA00AE884A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				211AF2121B5047BA00AE884A /* School Kit.app */,
+				211AF2261B5047BA00AE884A /* School KitTests.xctest */,
+				211AF2311B5047BA00AE884A /* School KitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		211AF2141B5047BA00AE884A /* School Kit */ = {
+			isa = PBXGroup;
+			children = (
+				211AF2151B5047BA00AE884A /* AppDelegate.swift */,
+				211AF2171B5047BA00AE884A /* ViewController.swift */,
+				211AF2191B5047BA00AE884A /* Main.storyboard */,
+				211AF21C1B5047BA00AE884A /* Assets.xcassets */,
+				211AF21E1B5047BA00AE884A /* LaunchScreen.storyboard */,
+				211AF2211B5047BA00AE884A /* Info.plist */,
+			);
+			path = "School Kit";
+			sourceTree = "<group>";
+		};
+		211AF2291B5047BA00AE884A /* School KitTests */ = {
+			isa = PBXGroup;
+			children = (
+				211AF22A1B5047BA00AE884A /* School_KitTests.swift */,
+				211AF22C1B5047BA00AE884A /* Info.plist */,
+			);
+			path = "School KitTests";
+			sourceTree = "<group>";
+		};
+		211AF2341B5047BA00AE884A /* School KitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				211AF2351B5047BA00AE884A /* School_KitUITests.swift */,
+				211AF2371B5047BA00AE884A /* Info.plist */,
+			);
+			path = "School KitUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		211AF2111B5047BA00AE884A /* School Kit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 211AF23A1B5047BA00AE884A /* Build configuration list for PBXNativeTarget "School Kit" */;
+			buildPhases = (
+				211AF20E1B5047BA00AE884A /* Sources */,
+				211AF20F1B5047BA00AE884A /* Frameworks */,
+				211AF2101B5047BA00AE884A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "School Kit";
+			productName = "School Kit";
+			productReference = 211AF2121B5047BA00AE884A /* School Kit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		211AF2251B5047BA00AE884A /* School KitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 211AF23D1B5047BA00AE884A /* Build configuration list for PBXNativeTarget "School KitTests" */;
+			buildPhases = (
+				211AF2221B5047BA00AE884A /* Sources */,
+				211AF2231B5047BA00AE884A /* Frameworks */,
+				211AF2241B5047BA00AE884A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				211AF2281B5047BA00AE884A /* PBXTargetDependency */,
+			);
+			name = "School KitTests";
+			productName = "School KitTests";
+			productReference = 211AF2261B5047BA00AE884A /* School KitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		211AF2301B5047BA00AE884A /* School KitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 211AF2401B5047BA00AE884A /* Build configuration list for PBXNativeTarget "School KitUITests" */;
+			buildPhases = (
+				211AF22D1B5047BA00AE884A /* Sources */,
+				211AF22E1B5047BA00AE884A /* Frameworks */,
+				211AF22F1B5047BA00AE884A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				211AF2331B5047BA00AE884A /* PBXTargetDependency */,
+			);
+			name = "School KitUITests";
+			productName = "School KitUITests";
+			productReference = 211AF2311B5047BA00AE884A /* School KitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		211AF20A1B5047BA00AE884A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Yasoob Rasheed";
+				TargetAttributes = {
+					211AF2111B5047BA00AE884A = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					211AF2251B5047BA00AE884A = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 211AF2111B5047BA00AE884A;
+					};
+					211AF2301B5047BA00AE884A = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 211AF2111B5047BA00AE884A;
+					};
+				};
+			};
+			buildConfigurationList = 211AF20D1B5047BA00AE884A /* Build configuration list for PBXProject "School Kit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 211AF2091B5047BA00AE884A;
+			productRefGroup = 211AF2131B5047BA00AE884A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				211AF2111B5047BA00AE884A /* School Kit */,
+				211AF2251B5047BA00AE884A /* School KitTests */,
+				211AF2301B5047BA00AE884A /* School KitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		211AF2101B5047BA00AE884A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				211AF2201B5047BA00AE884A /* LaunchScreen.storyboard in Resources */,
+				211AF21D1B5047BA00AE884A /* Assets.xcassets in Resources */,
+				211AF21B1B5047BA00AE884A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		211AF2241B5047BA00AE884A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		211AF22F1B5047BA00AE884A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		211AF20E1B5047BA00AE884A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				211AF2181B5047BA00AE884A /* ViewController.swift in Sources */,
+				211AF2161B5047BA00AE884A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		211AF2221B5047BA00AE884A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				211AF22B1B5047BA00AE884A /* School_KitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		211AF22D1B5047BA00AE884A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				211AF2361B5047BA00AE884A /* School_KitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		211AF2281B5047BA00AE884A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 211AF2111B5047BA00AE884A /* School Kit */;
+			targetProxy = 211AF2271B5047BA00AE884A /* PBXContainerItemProxy */;
+		};
+		211AF2331B5047BA00AE884A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 211AF2111B5047BA00AE884A /* School Kit */;
+			targetProxy = 211AF2321B5047BA00AE884A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		211AF2191B5047BA00AE884A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				211AF21A1B5047BA00AE884A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		211AF21E1B5047BA00AE884A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				211AF21F1B5047BA00AE884A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		211AF2381B5047BA00AE884A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		211AF2391B5047BA00AE884A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		211AF23B1B5047BA00AE884A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "School Kit/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rasheed.School-Kit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		211AF23C1B5047BA00AE884A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "School Kit/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rasheed.School-Kit";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		211AF23E1B5047BA00AE884A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "School KitTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rasheed.School-KitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/School Kit.app/School Kit";
+			};
+			name = Debug;
+		};
+		211AF23F1B5047BA00AE884A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "School KitTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rasheed.School-KitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/School Kit.app/School Kit";
+			};
+			name = Release;
+		};
+		211AF2411B5047BA00AE884A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "School KitUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rasheed.School-KitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "School Kit";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		211AF2421B5047BA00AE884A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "School KitUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rasheed.School-KitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "School Kit";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		211AF20D1B5047BA00AE884A /* Build configuration list for PBXProject "School Kit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				211AF2381B5047BA00AE884A /* Debug */,
+				211AF2391B5047BA00AE884A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		211AF23A1B5047BA00AE884A /* Build configuration list for PBXNativeTarget "School Kit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				211AF23B1B5047BA00AE884A /* Debug */,
+				211AF23C1B5047BA00AE884A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		211AF23D1B5047BA00AE884A /* Build configuration list for PBXNativeTarget "School KitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				211AF23E1B5047BA00AE884A /* Debug */,
+				211AF23F1B5047BA00AE884A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		211AF2401B5047BA00AE884A /* Build configuration list for PBXNativeTarget "School KitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				211AF2411B5047BA00AE884A /* Debug */,
+				211AF2421B5047BA00AE884A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 211AF20A1B5047BA00AE884A /* Project object */;
+}
