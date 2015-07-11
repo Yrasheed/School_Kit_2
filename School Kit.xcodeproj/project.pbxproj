@@ -14,6 +14,7 @@
 		211AF2201B5047BA00AE884A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 211AF21E1B5047BA00AE884A /* LaunchScreen.storyboard */; };
 		211AF22B1B5047BA00AE884A /* School_KitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211AF22A1B5047BA00AE884A /* School_KitTests.swift */; };
 		211AF2361B5047BA00AE884A /* School_KitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211AF2351B5047BA00AE884A /* School_KitUITests.swift */; };
+		211AF2481B5197C500AE884A /* ClassSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211AF2471B5197C500AE884A /* ClassSelectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		211AF2311B5047BA00AE884A /* School KitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "School KitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		211AF2351B5047BA00AE884A /* School_KitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School_KitUITests.swift; sourceTree = "<group>"; };
 		211AF2371B5047BA00AE884A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		211AF2471B5197C500AE884A /* ClassSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassSelectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		211AF2091B5047BA00AE884A = {
 			isa = PBXGroup;
 			children = (
+				211AF2471B5197C500AE884A /* ClassSelectionViewController.swift */,
 				211AF2141B5047BA00AE884A /* School Kit */,
 				211AF2291B5047BA00AE884A /* School KitTests */,
 				211AF2341B5047BA00AE884A /* School KitUITests */,
@@ -255,6 +258,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				211AF2481B5197C500AE884A /* ClassSelectionViewController.swift in Sources */,
 				211AF2181B5047BA00AE884A /* ViewController.swift in Sources */,
 				211AF2161B5047BA00AE884A /* AppDelegate.swift in Sources */,
 			);
@@ -483,6 +487,7 @@
 				211AF23C1B5047BA00AE884A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		211AF23D1B5047BA00AE884A /* Build configuration list for PBXNativeTarget "School KitTests" */ = {
 			isa = XCConfigurationList;
@@ -491,6 +496,7 @@
 				211AF23F1B5047BA00AE884A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		211AF2401B5047BA00AE884A /* Build configuration list for PBXNativeTarget "School KitUITests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +505,7 @@
 				211AF2421B5047BA00AE884A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
