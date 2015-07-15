@@ -133,7 +133,7 @@
             </objects>
             <point key="canvasLocation" x="1040.5" y="1199.5"/>
         </scene>
-        <!--Add Classes-->
+        <!--Add a Class-->
         <scene sceneID="dFs-QW-NLt">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="yRJ-Ti-D7f" customClass="ClassSelectionViewController" customModule="School_Kit" customModuleProvider="target" sceneMemberID="viewController">
@@ -187,7 +187,7 @@
                     <toolbarItems>
                         <barButtonItem title="Item" id="sKT-BA-iAP"/>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" title="Add Classes" id="rIj-35-1TO">
+                    <navigationItem key="navigationItem" title="Add a Class" id="rIj-35-1TO">
                         <barButtonItem key="rightBarButtonItem" title="Options" id="UII-uY-WjJ">
                             <connections>
                                 <action selector="onTappedOptionsButton:" destination="yRJ-Ti-D7f" id="InB-cB-HmP"/>
