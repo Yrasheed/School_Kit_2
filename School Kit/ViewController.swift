@@ -57,6 +57,9 @@ class ViewController: UIViewController {
 //        collision.translatesReferenceBoundsIntoBoundary = false
 //        animator.addBehavior(collision)
         
+        
+        print("This is me testing if we have the gits working!!!")
+        
     }
     
     override func didReceiveMemoryWarning() {
