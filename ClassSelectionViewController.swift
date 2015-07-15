@@ -14,13 +14,59 @@ class ClassSelectionViewController: UIViewController, UITableViewDataSource, UIT
     @IBOutlet weak var optionsButton: UIBarButtonItem!
     @IBOutlet weak var classSelectionTableView: UITableView!
     
-    var classes = ["Math", "Chemistry", "Economics"]
-    var teachers = ["Mr. Calvin", "Mrs. Leroy", "Mr. Fox"]
+    //var classes = ["Math", "Chemistry", "Economics"]
+    //var teachers = ["Mr. Calvin", "Mrs. Leroy", "Mr. Fox"]
+    var classes = [NSManagedObject]()
+    //var teachers = [NSManagedObject]()
+    let managedContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     
     override func viewDidLoad() {
         self.navigationController?.navigationBar.hidden = false
         super.viewDidLoad()
-        optionsButton.tag = 0    }
+        optionsButton.tag = 0
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let fetchResult = NSFetchRequest(entityName: "Class")
+        //let secondFetchResult = NSFetchRequest(entityName: "Class")
+        do {
+            let fetchResults = try self.managedContext.executeFetchRequest(fetchResult) as! [NSManagedObject]
+            //let secondFetchResults = try self.managedContext.executeFetchRequest(secondFetchResult) as! [NSManagedObject]
+            classes = fetchResults
+            //teachers = secondFetchResults
+        } catch let fetchError as NSError {
+            print(fetchError)
+        }
+        classSelectionTableView.reloadData()
+    }
+    
+//    func saveTableCellTeacher(name: String) {
+//        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+//        let entity = NSEntityDescription.entityForName("Class", inManagedObjectContext: managedContext)
+//        let teacher = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
+//        do {
+//            teacher.setValue(name, forKey: "teachers")
+//            try self.managedContext.save()
+//        } catch {
+//            print(error)
+//        }
+//        classes.append(teacher)
+//    }
+    
+    
+    func saveTableCellClass(name: String) {
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        let entity = NSEntityDescription.entityForName("Class", inManagedObjectContext: managedContext)
+        let oneClass = NSManagedObject(entity: entity!, insertIntoManagedObjectContext: managedContext)
+        do {
+            oneClass.setValue(name, forKey: "classes")
+            try self.managedContext.save()
+        } catch {
+            print(error)
+        }
+        classes.append(oneClass)
+    }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return classes.count
@@ -28,15 +74,20 @@ class ClassSelectionViewController: UIViewController, UITableViewDataSource, UIT
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath) as UITableViewCell
-        cell.textLabel?.text = classes[indexPath.row]
-        cell.detailTextLabel?.text = teachers[indexPath.row]
+        //        cell.textLabel?.text = classes[indexPath.row]
+        //        cell.detailTextLabel?.text = teachers[indexPath.row]
+        //        return cell
+        let Oneclass = classes[indexPath.row]
+        //let teacher = teachers[indexPath.row]
+        cell.textLabel!.text = Oneclass.valueForKey("classes") as? String
+        //cell.detailTextLabel!.text = teacher.valueForKey("teachers") as? String
         return cell
     }
     
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == UITableViewCellEditingStyle.Delete {
             classes.removeAtIndex(indexPath.row)
-            teachers.removeAtIndex(indexPath.row)
+            //teachers.removeAtIndex(indexPath.row)
             tableView.reloadData()
         }
     }
@@ -56,14 +107,17 @@ class ClassSelectionViewController: UIViewController, UITableViewDataSource, UIT
         alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
             textField.placeholder = "Enter Class Name"
         }
-        alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
-            textField.placeholder = "Enter Teacher Name"
-        }
+//        alert.addTextFieldWithConfigurationHandler { (textField) -> Void in
+//            textField.placeholder = "Enter Teacher Name"
+//        }
         let addAction = UIAlertAction(title: "Add Class", style: UIAlertActionStyle.Default, handler: {(action) -> Void in
             let classTextField = alert.textFields![0] as UITextField
-            self.classes.append(classTextField.text!)
-            let teacherTextField = alert.textFields![1] as UITextField
-            self.teachers.append(teacherTextField.text!)
+            ////self.classes.append(classTextField.text!)
+            //let teacherTextField = alert.textFields![1] as UITextField
+            ////self.teachers.append(teacherTextField.text!)
+            self.saveTableCellClass(classTextField.text!)
+            //self.saveTableCellTeacher(teacherTextField.text!)
+            
             self.classSelectionTableView.reloadData()
         })
         alert.addAction(addAction)

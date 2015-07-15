@@ -21,7 +21,6 @@ class TrimesterGradeViewController: UIViewController {
     
     @IBOutlet weak var classGradeLabel3: UILabel!
     
-    
     @IBOutlet weak var completeGradeLabel: UILabel!
     
     

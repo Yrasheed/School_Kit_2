@@ -44,8 +44,7 @@ class ViewController: UIViewController {
         block.backgroundColor = blueSwiftColor
         view.addSubview(block)
         view.sendSubviewToBack(block)
-        //51 153 255
-        //160 235 75
+        //51 153 255 for blue color
         animator = UIDynamicAnimator(referenceView: view)
         gravity = UIGravityBehavior(items: [block])
         gravity.gravityDirection = CGVectorMake(0, 2)
@@ -61,12 +60,6 @@ class ViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        
-        //borderwidth
-        //bordercolor
-        //green r188 g255 b121
-        //blue r179 g242 b252
-        //yellow r242 g242 b99
         // Dispose of any resources that can be recreated.
     }
 
