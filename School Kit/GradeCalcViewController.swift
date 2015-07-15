@@ -10,7 +10,7 @@ import UIKit
 
 class GradeCalcViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var calculators = ["Track Semester Grades", "Track Trimester Grades", "Track Quarter Grades", "What do I need on the final?"]
+    var calculators = ["Track Semester Grades", "Track Trimester Grades", "What do I need on the final?"]
     
     
     override func viewDidLoad() {
@@ -45,8 +45,6 @@ class GradeCalcViewController: UIViewController, UITableViewDataSource, UITableV
         } else if selectedIndex == 1 {
             performSegueWithIdentifier("trimesterPush", sender: self)
         } else if selectedIndex == 2 {
-            performSegueWithIdentifier("quarterPush", sender: self)
-        } else if selectedIndex == 3 {
             performSegueWithIdentifier("finalPush", sender: self)
         }
     }

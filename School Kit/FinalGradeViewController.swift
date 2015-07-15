@@ -9,27 +9,35 @@
 import UIKit
 
 class FinalGradeViewController: UIViewController {
+    
+    @IBOutlet weak var finalWeightTF: UITextField!
+    
+    @IBOutlet weak var classGradeTF: UITextField!
+    
+    @IBOutlet weak var gradeWantedTF: UITextField!
+    
+    @IBOutlet weak var gradeNeededLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func calcGradeButton(sender: UIButton) {
+        
+        let x = Double(classGradeTF.text!)
+        let y = Double(gradeWantedTF.text!)
+        let a = Double(finalWeightTF.text!)! / 100
+        let ax = a*x!
+        let topPart = ax - x! + y!
+        let z = topPart / a
+        let formattedZ = NSString(format: "%.2f", z)
+        
+        gradeNeededLabel.text = "You need a \(formattedZ)% on the final!"
+        
+        self.view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

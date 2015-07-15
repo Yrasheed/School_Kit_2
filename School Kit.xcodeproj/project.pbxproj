@@ -19,7 +19,6 @@
 		216B2A5E1B56E7B400687F88 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 216B2A5C1B56E7B400687F88 /* Model.xcdatamodeld */; };
 		217A8CE81B55BEE30087AFFE /* SemesterGradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217A8CE71B55BEE30087AFFE /* SemesterGradeViewController.swift */; };
 		217A8CEA1B55BEFD0087AFFE /* TrimesterGradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217A8CE91B55BEFD0087AFFE /* TrimesterGradeViewController.swift */; };
-		217A8CEC1B55BF0F0087AFFE /* QuarterGradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217A8CEB1B55BF0F0087AFFE /* QuarterGradeViewController.swift */; };
 		217A8CEE1B55BF270087AFFE /* FinalGradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217A8CED1B55BF270087AFFE /* FinalGradeViewController.swift */; };
 		612A0CB11B56CF8200210E23 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612A0CB01B56CF8200210E23 /* NotesViewController.swift */; };
 /* End PBXBuildFile section */
@@ -60,7 +59,6 @@
 		216B2A5D1B56E7B400687F88 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		217A8CE71B55BEE30087AFFE /* SemesterGradeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemesterGradeViewController.swift; sourceTree = "<group>"; };
 		217A8CE91B55BEFD0087AFFE /* TrimesterGradeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrimesterGradeViewController.swift; sourceTree = "<group>"; };
-		217A8CEB1B55BF0F0087AFFE /* QuarterGradeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuarterGradeViewController.swift; sourceTree = "<group>"; };
 		217A8CED1B55BF270087AFFE /* FinalGradeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalGradeViewController.swift; sourceTree = "<group>"; };
 		612A0CB01B56CF8200210E23 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -121,7 +119,6 @@
 				612A0CB01B56CF8200210E23 /* NotesViewController.swift */,
 				217A8CE71B55BEE30087AFFE /* SemesterGradeViewController.swift */,
 				217A8CE91B55BEFD0087AFFE /* TrimesterGradeViewController.swift */,
-				217A8CEB1B55BF0F0087AFFE /* QuarterGradeViewController.swift */,
 				217A8CED1B55BF270087AFFE /* FinalGradeViewController.swift */,
 				216B2A5C1B56E7B400687F88 /* Model.xcdatamodeld */,
 				211AF21C1B5047BA00AE884A /* Assets.xcassets */,
@@ -281,7 +278,6 @@
 			files = (
 				211AF2481B5197C500AE884A /* ClassSelectionViewController.swift in Sources */,
 				214962E81B554C7800222D5F /* GradeCalcViewController.swift in Sources */,
-				217A8CEC1B55BF0F0087AFFE /* QuarterGradeViewController.swift in Sources */,
 				217A8CEA1B55BEFD0087AFFE /* TrimesterGradeViewController.swift in Sources */,
 				211AF2181B5047BA00AE884A /* ViewController.swift in Sources */,
 				612A0CB11B56CF8200210E23 /* NotesViewController.swift in Sources */,

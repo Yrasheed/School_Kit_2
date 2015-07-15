@@ -33,21 +33,21 @@ UITextFieldDelegate{
         
         //let picker = UIImagePickerController()
         imagePicker.delegate = self
-        let actionSheet = UIAlertController(title: "camera", message: "camera or photo library", preferredStyle: .ActionSheet)
+        let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .ActionSheet)
         
-        let cameraAction = UIAlertAction(title: "camera", style: .Default) { (action) -> Void in
+        let cameraAction = UIAlertAction(title: "Take your own photo", style: .Default) { (action) -> Void in
             if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
                 self.imagePicker.sourceType = .Camera
                 self.presentViewController(self.imagePicker, animated: true, completion: nil)
             }
         }
         
-        let libraryAction = UIAlertAction(title: "library", style: .Default) { (action) -> Void in
+        let libraryAction = UIAlertAction(title: "Access the library", style: .Default) { (action) -> Void in
             self.imagePicker.sourceType = .PhotoLibrary
             self.presentViewController(self.imagePicker, animated: true, completion: nil)
         }
         
-        let cancelAction = UIAlertAction(title: "cancel", style: .Cancel) { (action) -> Void in
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) -> Void in
             self.dismissViewControllerAnimated(true, completion: nil)
         }
         
