@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import CoreData
 
 class ClassSelectionViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    
     @IBOutlet weak var optionsButton: UIBarButtonItem!
     @IBOutlet weak var classSelectionTableView: UITableView!
     
@@ -17,6 +18,7 @@ class ClassSelectionViewController: UIViewController, UITableViewDataSource, UIT
     var teachers = ["Mr. Calvin", "Mrs. Leroy", "Mr. Fox"]
     
     override func viewDidLoad() {
+        self.navigationController?.navigationBar.hidden = false
         super.viewDidLoad()
         optionsButton.tag = 0    }
     

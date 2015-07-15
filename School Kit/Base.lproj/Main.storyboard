@@ -34,11 +34,14 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNg-2B-fC8">
-                                <rect key="frame" x="37" y="350" width="300" height="30"/>
+                                <rect key="frame" x="37" y="350" width="300" height="42"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
-                                <state key="normal" title="Get Started">
+                                <state key="normal" title="Assignment Notes">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="MjD-kZ-SNI" kind="show" id="LbJ-2T-DOi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -52,13 +55,14 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="getStartedButton" destination="8cI-E4-bLY" id="9KP-qD-b7Z"/>
+                        <outlet property="notesButton" destination="nNg-2B-fC8" id="lL3-Zq-1xr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1040.5" y="351.5"/>
         </scene>
-        <!--Notes View Controller-->
+        <!--Notes-->
         <scene sceneID="8Kc-fN-peH">
             <objects>
                 <viewController id="MjD-kZ-SNI" customClass="NotesViewController" customModule="School_Kit" customModuleProvider="target" sceneMemberID="viewController">
@@ -67,32 +71,52 @@
                         <viewControllerLayoutGuide type="bottom" id="1bM-u3-R5Y"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Bff-MS-mJV">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S1O-iR-XK2">
-                                <rect key="frame" x="97" y="322" width="335" height="211"/>
-                            </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lpR-j9-oFs">
-                                <rect key="frame" x="100" y="20" width="328" height="278"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Type your notes here:" translatesAutoresizingMaskIntoConstraints="NO" id="lpR-j9-oFs">
+                                <rect key="frame" x="20" y="20" width="335" height="317"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S1O-iR-XK2">
+                                <rect key="frame" x="20" y="352" width="335" height="295"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="295" id="Vdw-eM-X1r"/>
+                                    <constraint firstAttribute="width" constant="335" id="Wh8-zE-yKn"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="S1O-iR-XK2" firstAttribute="top" secondItem="lpR-j9-oFs" secondAttribute="bottom" constant="15" id="1Lu-Zb-DRu"/>
+                            <constraint firstItem="S1O-iR-XK2" firstAttribute="top" secondItem="lpR-j9-oFs" secondAttribute="bottom" constant="15" id="6TG-Ws-8Re"/>
+                            <constraint firstItem="lpR-j9-oFs" firstAttribute="leading" secondItem="Bff-MS-mJV" secondAttribute="leadingMargin" id="7qF-lW-aBq"/>
+                            <constraint firstItem="S1O-iR-XK2" firstAttribute="trailing" secondItem="Bff-MS-mJV" secondAttribute="trailingMargin" id="Duk-2j-pos"/>
+                            <constraint firstItem="S1O-iR-XK2" firstAttribute="top" secondItem="lpR-j9-oFs" secondAttribute="bottom" constant="15" id="J0Y-2s-odb"/>
+                            <constraint firstItem="lpR-j9-oFs" firstAttribute="leading" secondItem="Bff-MS-mJV" secondAttribute="leadingMargin" id="TPF-io-zXP"/>
+                            <constraint firstItem="lpR-j9-oFs" firstAttribute="trailing" secondItem="Bff-MS-mJV" secondAttribute="trailingMargin" id="UrQ-Jg-5Qq"/>
+                            <constraint firstItem="lpR-j9-oFs" firstAttribute="top" secondItem="9Gl-uV-GpZ" secondAttribute="bottom" constant="8" id="gSI-Ug-aZI"/>
+                            <constraint firstItem="S1O-iR-XK2" firstAttribute="centerX" secondItem="Bff-MS-mJV" secondAttribute="centerX" id="k5E-hb-QiU"/>
+                            <constraint firstItem="lpR-j9-oFs" firstAttribute="trailing" secondItem="Bff-MS-mJV" secondAttribute="trailingMargin" id="ksd-vS-1xS"/>
+                            <constraint firstItem="lpR-j9-oFs" firstAttribute="top" secondItem="Bff-MS-mJV" secondAttribute="topMargin" constant="20" id="odX-eN-oxe"/>
+                            <constraint firstItem="S1O-iR-XK2" firstAttribute="leading" secondItem="Bff-MS-mJV" secondAttribute="leadingMargin" id="pvg-dC-jF6"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="S1O-iR-XK2" secondAttribute="bottom" constant="20" id="xDt-3d-lNT"/>
+                        </constraints>
                         <connections>
                             <outletCollection property="gestureRecognizers" destination="IZF-eq-1dV" appends="YES" id="4fc-HJ-9DS"/>
                         </connections>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem title="Item" systemItem="camera" id="IN5-sl-qSX">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Notes" id="HPh-hk-I55">
+                        <barButtonItem key="rightBarButtonItem" systemItem="camera" id="j1H-Tw-lJ9">
                             <connections>
-                                <action selector="cameraButtonTapped:" destination="MjD-kZ-SNI" id="PgE-zZ-ia9"/>
+                                <action selector="cameraButtonTapped:" destination="MjD-kZ-SNI" id="LlZ-wK-Nqy"/>
                             </connections>
                         </barButtonItem>
-                    </toolbarItems>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="imageView" destination="S1O-iR-XK2" id="Vfb-W4-zVr"/>
@@ -107,7 +131,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1046" y="1130"/>
+            <point key="canvasLocation" x="1040.5" y="1199.5"/>
         </scene>
         <!--Title-->
         <scene sceneID="dFs-QW-NLt">

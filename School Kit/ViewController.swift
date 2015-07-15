@@ -21,24 +21,31 @@ extension UIColor {
 class ViewController: UIViewController {
     
     @IBOutlet weak var getStartedButton: UIButton!
+    @IBOutlet weak var notesButton: UIButton!
 
     var animator : UIDynamicAnimator!
     var gravity : UIGravityBehavior!
-    var cgWhite : CGColor!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.hidden = true
+        
+        notesButton.layer.borderColor = CGColorCreate(CGColorSpaceCreateDeviceRGB(), [1.0, 1.0, 1.0, 1.0])
+        notesButton.layer.borderWidth = CGFloat(2)
+        notesButton.layer.cornerRadius = 30
         
         getStartedButton.layer.borderColor = CGColorCreate(CGColorSpaceCreateDeviceRGB(), [1.0, 1.0, 1.0, 1.0])
         getStartedButton.layer.borderWidth = CGFloat(2)
         getStartedButton.layer.cornerRadius = 30
         
         let block = UIView(frame: CGRect(x: 0, y: -700, width: 380, height: 668))
-        let greenSwiftColor = UIColor(red: 160, green: 235, blue: 75)
-        block.backgroundColor = greenSwiftColor
+        let blueSwiftColor = UIColor(red: 51, green: 153, blue: 255)
+        block.backgroundColor = blueSwiftColor
         view.addSubview(block)
         view.sendSubviewToBack(block)
-        
+        //51 153 255
+        //160 235 75
         animator = UIDynamicAnimator(referenceView: view)
         gravity = UIGravityBehavior(items: [block])
         gravity.gravityDirection = CGVectorMake(0, 2)
