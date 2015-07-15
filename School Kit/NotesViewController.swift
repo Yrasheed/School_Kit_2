@@ -71,5 +71,8 @@ UITextFieldDelegate{
             }
         }
     }
+    @IBAction func onScreenTapped(sender: AnyObject) {
+        view.endEditing(true)
+    }
 
 }
