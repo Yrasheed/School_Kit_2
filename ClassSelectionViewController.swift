@@ -78,6 +78,11 @@ class ClassSelectionViewController: UIViewController, UITableViewDataSource, UIT
         
         self.presentViewController(alert, animated: true, completion: nil)
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let dvc = segue.destinationViewController as! GradeCalcViewController
+        let index = classSelectionTableView.indexPathForSelectedRow?.row
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

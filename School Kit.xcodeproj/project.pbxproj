@@ -15,6 +15,11 @@
 		211AF22B1B5047BA00AE884A /* School_KitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211AF22A1B5047BA00AE884A /* School_KitTests.swift */; };
 		211AF2361B5047BA00AE884A /* School_KitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211AF2351B5047BA00AE884A /* School_KitUITests.swift */; };
 		211AF2481B5197C500AE884A /* ClassSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211AF2471B5197C500AE884A /* ClassSelectionViewController.swift */; };
+		214962E81B554C7800222D5F /* GradeCalcViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214962E71B554C7800222D5F /* GradeCalcViewController.swift */; };
+		217A8CE81B55BEE30087AFFE /* SemesterGradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217A8CE71B55BEE30087AFFE /* SemesterGradeViewController.swift */; };
+		217A8CEA1B55BEFD0087AFFE /* TrimesterGradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217A8CE91B55BEFD0087AFFE /* TrimesterGradeViewController.swift */; };
+		217A8CEC1B55BF0F0087AFFE /* QuarterGradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217A8CEB1B55BF0F0087AFFE /* QuarterGradeViewController.swift */; };
+		217A8CEE1B55BF270087AFFE /* FinalGradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217A8CED1B55BF270087AFFE /* FinalGradeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		211AF2351B5047BA00AE884A /* School_KitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = School_KitUITests.swift; sourceTree = "<group>"; };
 		211AF2371B5047BA00AE884A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		211AF2471B5197C500AE884A /* ClassSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassSelectionViewController.swift; sourceTree = "<group>"; };
+		214962E71B554C7800222D5F /* GradeCalcViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GradeCalcViewController.swift; path = "School Kit/GradeCalcViewController.swift"; sourceTree = "<group>"; };
+		217A8CE71B55BEE30087AFFE /* SemesterGradeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SemesterGradeViewController.swift; sourceTree = "<group>"; };
+		217A8CE91B55BEFD0087AFFE /* TrimesterGradeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrimesterGradeViewController.swift; sourceTree = "<group>"; };
+		217A8CEB1B55BF0F0087AFFE /* QuarterGradeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuarterGradeViewController.swift; sourceTree = "<group>"; };
+		217A8CED1B55BF270087AFFE /* FinalGradeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FinalGradeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +89,7 @@
 		211AF2091B5047BA00AE884A = {
 			isa = PBXGroup;
 			children = (
+				214962E71B554C7800222D5F /* GradeCalcViewController.swift */,
 				211AF2471B5197C500AE884A /* ClassSelectionViewController.swift */,
 				211AF2141B5047BA00AE884A /* School Kit */,
 				211AF2291B5047BA00AE884A /* School KitTests */,
@@ -103,6 +114,10 @@
 				211AF2151B5047BA00AE884A /* AppDelegate.swift */,
 				211AF2171B5047BA00AE884A /* ViewController.swift */,
 				211AF2191B5047BA00AE884A /* Main.storyboard */,
+				217A8CE91B55BEFD0087AFFE /* TrimesterGradeViewController.swift */,
+				217A8CEB1B55BF0F0087AFFE /* QuarterGradeViewController.swift */,
+				217A8CED1B55BF270087AFFE /* FinalGradeViewController.swift */,
+				217A8CE71B55BEE30087AFFE /* SemesterGradeViewController.swift */,
 				211AF21C1B5047BA00AE884A /* Assets.xcassets */,
 				211AF21E1B5047BA00AE884A /* LaunchScreen.storyboard */,
 				211AF2211B5047BA00AE884A /* Info.plist */,
@@ -259,7 +274,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				211AF2481B5197C500AE884A /* ClassSelectionViewController.swift in Sources */,
+				214962E81B554C7800222D5F /* GradeCalcViewController.swift in Sources */,
+				217A8CEC1B55BF0F0087AFFE /* QuarterGradeViewController.swift in Sources */,
+				217A8CEA1B55BEFD0087AFFE /* TrimesterGradeViewController.swift in Sources */,
 				211AF2181B5047BA00AE884A /* ViewController.swift in Sources */,
+				217A8CEE1B55BF270087AFFE /* FinalGradeViewController.swift in Sources */,
+				217A8CE81B55BEE30087AFFE /* SemesterGradeViewController.swift in Sources */,
 				211AF2161B5047BA00AE884A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
