@@ -10,65 +10,59 @@ import UIKit
 
 class SemesterGradeViewController: UIViewController {
     
+    @IBOutlet weak var addButton1: UIButton!
+    @IBOutlet weak var addButton2: UIButton!
+    @IBOutlet weak var addButton3: UIButton!
+    @IBOutlet weak var addButton4: UIButton!
+    @IBOutlet weak var updateButton: UIButton!
+    
+    
     @IBOutlet weak var newGradeCorrectTF: UITextField!
-    
     @IBOutlet weak var newGradeTotalTF: UITextField!
-    
     @IBOutlet weak var overallCorrectLabel: UILabel!
-    
     @IBOutlet weak var overallTotalLabel: UILabel!
-    
     @IBOutlet weak var overallGradeLabel: UILabel!
     
     
     @IBOutlet weak var newGradeCorrectTF2: UITextField!
-    
     @IBOutlet weak var newGradeTotalTF2: UITextField!
-    
     @IBOutlet weak var overallCorrectLabel2: UILabel!
-    
     @IBOutlet weak var overallTotalLabel2: UILabel!
-    
     @IBOutlet weak var overallGradeLabel2: UILabel!
     
     
     @IBOutlet weak var homeworkWeightTF: UITextField!
-    
     @IBOutlet weak var testsWeightTF: UITextField!
-    
-    
     @IBOutlet weak var classGradeLabel: UILabel!
-    
     @IBOutlet weak var classGradeLabel2: UILabel!
-    
-    
     @IBOutlet weak var completeGradeLabel: UILabel!
     
-    
     @IBOutlet weak var newGradeCorrectTF3: UITextField!
-    
     @IBOutlet weak var newGradeTotalTF3: UITextField!
-    
     @IBOutlet weak var overallCorrectLabel3: UILabel!
-    
     @IBOutlet weak var overallTotalLabel3: UILabel!
-    
     @IBOutlet weak var overallGradeLabel3: UILabel!
     
-    
     @IBOutlet weak var newGradeCorrectTF4: UITextField!
-    
     @IBOutlet weak var newGradeTotalTF4: UITextField!
-    
     @IBOutlet weak var overallCorrectLabel4: UILabel!
-    
     @IBOutlet weak var overallTotalLabel4: UILabel!
-    
     @IBOutlet weak var overallGradeLabel4: UILabel!
-
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        buttonFormatter(addButton1)
+        buttonFormatter(addButton2)
+        buttonFormatter(addButton3)
+        buttonFormatter(addButton4)
+        buttonFormatter(updateButton)
+    }
+    
+    func buttonFormatter(button: UIButton) {
+        button.layer.borderColor = CGColorCreate(CGColorSpaceCreateDeviceRGB(), [51/225, 153/225, 1.0, 1.0])
+        button.layer.borderWidth = CGFloat(1.5)
+        button.layer.cornerRadius = 15
+        //(red: 51, green: 153, blue: 255)
     }
     
     @IBAction func onGoButtonTapped(sender: UIButton) {

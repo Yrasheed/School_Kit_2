@@ -28,7 +28,7 @@ UITextFieldDelegate{
         self.navigationController?.navigationBar.hidden = true
     }
     
-
+    
     @IBAction func cameraButtonTapped(sender: UIBarButtonItem) {
         imagePicker.delegate = self
         let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .ActionSheet)
@@ -39,7 +39,6 @@ UITextFieldDelegate{
                 self.presentViewController(self.imagePicker, animated: true, completion: { () -> Void in
                     self.navigationController?.navigationBar.hidden = false
                 })
-                
             }
         }
         
@@ -61,7 +60,6 @@ UITextFieldDelegate{
     }
     
     func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
-        
         self.imageView.image = image
         picker.dismissViewControllerAnimated(true, completion: nil)
     }
