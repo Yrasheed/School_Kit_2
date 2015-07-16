@@ -80,7 +80,9 @@ class ClassSelectionViewController: UIViewController, UITableViewDataSource, UIT
             managedContext.deleteObject(removeOneClass)
             do {
                 try managedContext.save()
-            } catch {}
+            } catch {
+                print(error)
+            }
             classes.removeAtIndex(indexPath.row)
             tableView.reloadData()
             

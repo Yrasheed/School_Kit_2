@@ -131,7 +131,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1040.5" y="1199.5"/>
+            <point key="canvasLocation" x="1040.5" y="1109.5"/>
         </scene>
         <!--Add a Class-->
         <scene sceneID="dFs-QW-NLt">
@@ -714,7 +714,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oH6-xU-Zh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2726.5" y="789.5"/>
+            <point key="canvasLocation" x="2418.5" y="351.5"/>
         </scene>
         <!--Final Grade View Controller-->
         <scene sceneID="Uzk-qt-JeO">
@@ -807,7 +807,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6zx-3E-4Gr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1700.5" y="1163.5"/>
+            <point key="canvasLocation" x="1956.5" y="1109.5"/>
         </scene>
         <!--Semester Grade View Controller-->
         <scene sceneID="IkX-26-Ac7">
@@ -1121,13 +1121,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ZK-kv-WEF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2726.5" y="6.5"/>
+            <point key="canvasLocation" x="1956.5" y="-403.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="exx-tV-G7A">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="VHc-rW-rXM" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mMS-dP-j2U">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1139,7 +1140,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="li1-07-SIo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="473" y="352"/>
+            <point key="canvasLocation" x="586.5" y="351.5"/>
         </scene>
     </scenes>
 </document>

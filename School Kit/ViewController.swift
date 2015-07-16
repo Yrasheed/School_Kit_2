@@ -51,7 +51,7 @@ class ViewController: UIViewController {
         
         let collision = UICollisionBehavior(items: [block])
         collision.collisionMode = .Everything
-        collision.addBoundaryWithIdentifier("bottomCollision", fromPoint: CGPointMake(0, self.view.frame.height + 2), toPoint: CGPointMake(self.view.frame.width, self.view.frame.height + 2))
+        collision.addBoundaryWithIdentifier("bottomCollision", fromPoint: CGPointMake(0, self.view.frame.height + 2), toPoint: CGPointMake(self.view.frame.width, self.view.frame.height + 2)) //Create a boundary
         animator.addBehavior(collision)
     }
     

@@ -67,16 +67,16 @@ class TrimesterGradeViewController: UIViewController {
     @IBOutlet weak var newGradeCorrectTF6: UITextField!
     @IBOutlet weak var newGradeTotalTF6: UITextField!
     @IBOutlet weak var overallCorrectLabel6: UILabel!
-    @IBOutlet weak var overallTotalLabel6: UILabel!    
+    @IBOutlet weak var overallTotalLabel6: UILabel!
     @IBOutlet weak var overallGradeLabel6: UILabel!
-
+    
     func buttonFormatter(button: UIButton) {
         button.layer.borderColor = CGColorCreate(CGColorSpaceCreateDeviceRGB(), [51/225, 153/225, 1.0, 1.0])
         button.layer.borderWidth = CGFloat(1.5)
         button.layer.cornerRadius = 15
         //(red: 51, green: 153, blue: 255)
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         buttonFormatter(addButton1)
@@ -232,6 +232,7 @@ class TrimesterGradeViewController: UIViewController {
         self.view.endEditing(true)
     }
     
+    
     @IBAction func clacGradeButton(sender: UIButton) {
         
         let homeworkWeightValue = Double(homeworkWeightTF.text!)
@@ -274,14 +275,26 @@ class TrimesterGradeViewController: UIViewController {
         
         let completeGradeValue = (classGradeValue + classGradeValue2 + classGradeValue3) / 3
         let formattedCompleteGradeValue = NSString(format: "%.2f", completeGradeValue)
+        print(formattedCompleteGradeValue)
         
-        classGradeLabel.text! = "\(formattedClassGradeValue)%"
-        classGradeLabel2.text! = "\(formattedClassGradeValue2)%"
-        classGradeLabel3.text! = "\(formattedClassGradeValue3)%"
-        completeGradeLabel.text! = "\(formattedCompleteGradeValue)%"
+        if (formattedClassGradeValue != "nan"){
+            classGradeLabel.text! = "\(formattedClassGradeValue)%"
+        }
+        
+        if (formattedClassGradeValue2 != "nan") {
+            classGradeLabel2.text! = "\(formattedClassGradeValue2)%"
+        }
+        
+        if (formattedClassGradeValue3 != "nan") {
+            classGradeLabel3.text! = "\(formattedClassGradeValue3)%"
+        }
+        
+        if (formattedCompleteGradeValue != "nan") {
+            completeGradeLabel.text! = "\(formattedCompleteGradeValue)%"
+        }
     }
-
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }

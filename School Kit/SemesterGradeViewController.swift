@@ -48,7 +48,7 @@ class SemesterGradeViewController: UIViewController {
     @IBOutlet weak var overallCorrectLabel4: UILabel!
     @IBOutlet weak var overallTotalLabel4: UILabel!
     @IBOutlet weak var overallGradeLabel4: UILabel!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         buttonFormatter(addButton1)
@@ -159,6 +159,8 @@ class SemesterGradeViewController: UIViewController {
         self.view.endEditing(true)
     }
     
+    
+    
     @IBAction func calcGradeButton(sender: UIButton) {
         
         let homeworkWeightValue = Double(homeworkWeightTF.text!)
@@ -191,11 +193,17 @@ class SemesterGradeViewController: UIViewController {
         let completeGradeValue = (classGradeValue + classGradeValue2) / 2
         let formattedCompleteGradeValue = NSString(format: "%.2f", completeGradeValue)
         
-        classGradeLabel.text! = "\(formattedClassGradeValue)%"
-        classGradeLabel2.text! = "\(formattedClassGradeValue2)%"
-        completeGradeLabel.text! = "\(formattedCompleteGradeValue)"
+        if (formattedClassGradeValue != "nan") {
+            classGradeLabel.text! = "\(formattedClassGradeValue)%"
+        }
+        if (formattedClassGradeValue2 != "nan") {
+            classGradeLabel2.text! = "\(formattedClassGradeValue2)%"
+        }
+        if (formattedCompleteGradeValue != "nan") {
+            completeGradeLabel.text! = "\(formattedCompleteGradeValue)%"
+        }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
