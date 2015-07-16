@@ -9,7 +9,7 @@
 import UIKit
 
 extension UIColor {
-    convenience init(red: Int, green: Int, blue: Int) {
+    convenience init(red: Float, green: Float, blue: Float) {
         let newRed = CGFloat(red)/255
         let newGreen = CGFloat(green)/255
         let newBlue = CGFloat(blue)/255
@@ -28,7 +28,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         self.navigationController?.navigationBar.hidden = true
         
         notesButton.layer.borderColor = CGColorCreate(CGColorSpaceCreateDeviceRGB(), [1.0, 1.0, 1.0, 1.0])

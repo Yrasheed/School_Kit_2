@@ -18,33 +18,36 @@ UITextFieldDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let blueSwiftColor = UIColor(red: 51, green: 153, blue: 255)
+        textView.textColor = blueSwiftColor
         self.navigationController?.navigationBar.hidden = false
-        
         imagePicker.delegate = self
-        
-        // Do any additional setup after loading the view.
     }
     
-    
+    override func viewWillDisappear(animated: Bool) {
+        self.navigationController?.navigationBar.hidden = true
+    }
     
 
     @IBAction func cameraButtonTapped(sender: UIBarButtonItem) {
-        
-        //let picker = UIImagePickerController()
         imagePicker.delegate = self
         let actionSheet = UIAlertController(title: nil, message: nil, preferredStyle: .ActionSheet)
         
         let cameraAction = UIAlertAction(title: "Take your own photo", style: .Default) { (action) -> Void in
             if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.Camera) {
                 self.imagePicker.sourceType = .Camera
-                self.presentViewController(self.imagePicker, animated: true, completion: nil)
+                self.presentViewController(self.imagePicker, animated: true, completion: { () -> Void in
+                    self.navigationController?.navigationBar.hidden = false
+                })
+                
             }
         }
         
-        let libraryAction = UIAlertAction(title: "Access the library", style: .Default) { (action) -> Void in
+        let libraryAction = UIAlertAction(title: "Access the photo library", style: .Default) { (action) -> Void in
             self.imagePicker.sourceType = .PhotoLibrary
-            self.presentViewController(self.imagePicker, animated: true, completion: nil)
+            self.presentViewController(self.imagePicker, animated: true, completion: { (action) -> Void in
+                self.navigationController?.navigationBar.hidden = false
+            })
         }
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (action) -> Void in

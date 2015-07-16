@@ -10,12 +10,15 @@ import UIKit
 
 class GradeCalcViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    @IBOutlet weak var gradeCalcTableView: UITableView!
+    
     var calculators = ["Track Semester Grades", "Track Trimester Grades", "What do I need on the final?"]
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationController?.navigationBar.hidden = false
+        gradeCalcTableView.tableFooterView = UIView(frame: CGRectZero)
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -26,6 +29,14 @@ class GradeCalcViewController: UIViewController, UITableViewDataSource, UITableV
         
         let cell = tableView.dequeueReusableCellWithIdentifier("MyCell2", forIndexPath: indexPath)
         cell.textLabel?.text = calculators[indexPath.row]
+        let blueSwiftColor = UIColor(red: 51, green: 153, blue: 255)
+        if indexPath.row % 2 == 0 {
+            cell.backgroundColor = blueSwiftColor
+            cell.textLabel?.textColor = UIColor.whiteColor()
+        } else {
+            cell.backgroundColor = UIColor.whiteColor()
+            cell.textLabel?.textColor = blueSwiftColor
+        }
         return cell
     }
     

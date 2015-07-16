@@ -21,6 +21,7 @@ class ClassSelectionViewController: UIViewController, UITableViewDataSource, UIT
         self.navigationController?.navigationBar.hidden = false
         super.viewDidLoad()
         optionsButton.tag = 0
+        classSelectionTableView.tableFooterView = UIView(frame: CGRectZero)
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -60,6 +61,15 @@ class ClassSelectionViewController: UIViewController, UITableViewDataSource, UIT
         let cell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath) as UITableViewCell
         let Oneclass = classes[indexPath.row]
         cell.textLabel!.text = Oneclass.valueForKey("classes") as? String
+        let blueSwiftColor = UIColor(red: 51, green: 153, blue: 255)
+        if indexPath.row % 2 == 0 {
+            cell.backgroundColor = blueSwiftColor
+            cell.textLabel?.textColor = UIColor.whiteColor()
+        } else {
+            cell.backgroundColor = UIColor.whiteColor()
+            cell.textLabel?.textColor = blueSwiftColor
+        }
+        
         return cell
     }
     
