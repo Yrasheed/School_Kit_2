@@ -234,6 +234,9 @@ class TrimesterGradeViewController: UIViewController {
     
     
     @IBAction func clacGradeButton(sender: UIButton) {
+        if Double(homeworkWeightTF.text!)! + Double(testsWeightTF.text!)! != 100 {
+            completeGradeLabel.text = "ERR"
+        }
         
         let homeworkWeightValue = Double(homeworkWeightTF.text!)
         let testsWeightValue = Double(testsWeightTF.text!)
