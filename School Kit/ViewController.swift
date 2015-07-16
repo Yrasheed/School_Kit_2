@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         getStartedButton.layer.borderWidth = CGFloat(2)
         getStartedButton.layer.cornerRadius = 30
         
-        let block = UIView(frame: CGRect(x: 0, y: -700, width: 380, height: 668))
+        let block = UIView(frame: CGRect(x: 0, y: -5000, width: 380, height: 668))
         let blueSwiftColor = UIColor(red: 51, green: 153, blue: 255)
         block.backgroundColor = blueSwiftColor
         view.addSubview(block)

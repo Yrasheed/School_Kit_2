@@ -15,6 +15,7 @@ class SemesterGradeViewController: UIViewController {
     @IBOutlet weak var addButton3: UIButton!
     @IBOutlet weak var addButton4: UIButton!
     @IBOutlet weak var updateButton: UIButton!
+    @IBOutlet weak var recordYourGrades: UIButton!
     
     
     @IBOutlet weak var newGradeCorrectTF: UITextField!
@@ -56,6 +57,7 @@ class SemesterGradeViewController: UIViewController {
         buttonFormatter(addButton3)
         buttonFormatter(addButton4)
         buttonFormatter(updateButton)
+        buttonFormatter(recordYourGrades)
     }
     
     func buttonFormatter(button: UIButton) {

@@ -17,6 +17,7 @@ class TrimesterGradeViewController: UIViewController {
     @IBOutlet weak var addButton5: UIButton!
     @IBOutlet weak var addButton6: UIButton!
     @IBOutlet weak var updateButton: UIButton!
+    @IBOutlet weak var recordYourGrade: UIButton!
     
     
     @IBOutlet weak var homeworkWeightTF: UITextField!
@@ -86,6 +87,7 @@ class TrimesterGradeViewController: UIViewController {
         buttonFormatter(addButton5)
         buttonFormatter(addButton6)
         buttonFormatter(updateButton)
+        buttonFormatter(recordYourGrade)
     }
     
     @IBAction func addGradeButton(sender: UIButton) {

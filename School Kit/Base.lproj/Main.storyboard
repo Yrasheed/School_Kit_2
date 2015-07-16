@@ -663,6 +663,16 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="deviceRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvx-yk-5Qb">
+                                <rect key="frame" x="155" y="471" width="170" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <state key="normal" title="Record Your Grades">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BEw-gf-J4t" kind="show" id="rsK-Eq-Xk1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -708,13 +718,80 @@
                         <outlet property="overallTotalLabel4" destination="iFp-4Z-63G" id="aJd-XN-qhn"/>
                         <outlet property="overallTotalLabel5" destination="PzW-0s-t8P" id="Pq7-Yf-jay"/>
                         <outlet property="overallTotalLabel6" destination="kAc-4k-cgx" id="F3L-m8-lvL"/>
+                        <outlet property="recordYourGrade" destination="hvx-yk-5Qb" id="F7w-aZ-nKJ"/>
                         <outlet property="testsWeightTF" destination="ZYY-kk-kEx" id="D70-5B-afQ"/>
                         <outlet property="updateButton" destination="ZxN-7w-SHs" id="FpY-d0-n3Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oH6-xU-Zh6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2418.5" y="351.5"/>
+            <point key="canvasLocation" x="2458.5" y="740.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="xCp-9p-2Yw">
+            <objects>
+                <viewController id="BEw-gf-J4t" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GN5-X1-Xwo"/>
+                        <viewControllerLayoutGuide type="bottom" id="jak-aU-db5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MJy-8l-vUY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Record your grades here in notes:" translatesAutoresizingMaskIntoConstraints="NO" id="Esn-5G-GGW">
+                                <rect key="frame" x="20" y="20" width="355" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Esn-5G-GGW" firstAttribute="leading" secondItem="MJy-8l-vUY" secondAttribute="leadingMargin" id="6Ti-VF-uh2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Esn-5G-GGW" secondAttribute="trailing" constant="-20" id="LHr-er-LO3"/>
+                            <constraint firstItem="Esn-5G-GGW" firstAttribute="top" secondItem="MJy-8l-vUY" secondAttribute="topMargin" constant="20" id="kx5-j8-Bta"/>
+                            <constraint firstItem="jak-aU-db5" firstAttribute="top" secondItem="Esn-5G-GGW" secondAttribute="bottom" id="p2G-pM-YnX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xf4-mz-GrN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3032.5" y="740.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8BD-il-dFT">
+            <objects>
+                <viewController id="vDQ-4Y-UAG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e92-Do-8OV"/>
+                        <viewControllerLayoutGuide type="bottom" id="td5-7F-paH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jMo-lG-bc6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" text="Record your grades here in notes: " translatesAutoresizingMaskIntoConstraints="NO" id="YeV-bg-AaS">
+                                <rect key="frame" x="20" y="12" width="355" height="611"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="td5-7F-paH" firstAttribute="top" secondItem="YeV-bg-AaS" secondAttribute="bottom" id="5Ep-nD-xn2"/>
+                            <constraint firstItem="YeV-bg-AaS" firstAttribute="top" secondItem="jMo-lG-bc6" secondAttribute="topMargin" constant="12" id="ecs-TT-z0Q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YeV-bg-AaS" secondAttribute="trailing" constant="-20" id="lSL-8r-WCY"/>
+                            <constraint firstItem="YeV-bg-AaS" firstAttribute="leading" secondItem="jMo-lG-bc6" secondAttribute="leadingMargin" id="ucd-RC-Vkw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C5o-A7-lmg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3032.5" y="-7.5"/>
         </scene>
         <!--Final Grade View Controller-->
         <scene sceneID="Uzk-qt-JeO">
@@ -1083,6 +1160,16 @@
                                     <action selector="onGoButtonTapped4:" destination="Plc-lP-tvd" eventType="touchUpInside" id="sKe-lk-78E"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G7D-Db-rkT">
+                                <rect key="frame" x="155" y="421" width="170" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <state key="normal" title="Record Your Grades">
+                                    <color key="titleColor" red="0.20000000000000001" green="0.59999999999999998" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vDQ-4Y-UAG" kind="show" id="vjC-Kz-F2B"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -1115,13 +1202,14 @@
                         <outlet property="overallTotalLabel2" destination="p2T-z2-4vj" id="tKw-sR-aaw"/>
                         <outlet property="overallTotalLabel3" destination="T8S-0S-eL5" id="exp-U1-cBv"/>
                         <outlet property="overallTotalLabel4" destination="GDP-Gq-ItW" id="TcZ-bU-iGB"/>
+                        <outlet property="recordYourGrades" destination="G7D-Db-rkT" id="skN-zb-APQ"/>
                         <outlet property="testsWeightTF" destination="bNm-Qq-5Nk" id="M9A-EN-GrM"/>
                         <outlet property="updateButton" destination="8xm-hR-awQ" id="gAJ-SB-d0v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ZK-kv-WEF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1956.5" y="-403.5"/>
+            <point key="canvasLocation" x="2458.5" y="-7.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="exx-tV-G7A">
