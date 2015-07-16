@@ -51,6 +51,7 @@ class ClassSelectionViewController: UIViewController, UITableViewDataSource, UIT
             print(error)
         }
         classes.append(oneClass)
+        
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -59,8 +60,8 @@ class ClassSelectionViewController: UIViewController, UITableViewDataSource, UIT
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("MyCell", forIndexPath: indexPath) as UITableViewCell
-        let Oneclass = classes[indexPath.row]
-        cell.textLabel!.text = Oneclass.valueForKey("classes") as? String
+        let oneClass = classes[indexPath.row]
+        cell.textLabel!.text = oneClass.valueForKey("classes") as? String
         let blueSwiftColor = UIColor(red: 51, green: 153, blue: 255)
         if indexPath.row % 2 == 0 {
             cell.backgroundColor = blueSwiftColor
@@ -72,11 +73,17 @@ class ClassSelectionViewController: UIViewController, UITableViewDataSource, UIT
         
         return cell
     }
-    
+  
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == UITableViewCellEditingStyle.Delete {
+            let removeOneClass = classes[indexPath.row] 
+            managedContext.deleteObject(removeOneClass)
+            do {
+                try managedContext.save()
+            } catch {}
             classes.removeAtIndex(indexPath.row)
             tableView.reloadData()
+            
         }
     }
     
